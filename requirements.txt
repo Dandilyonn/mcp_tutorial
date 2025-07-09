@@ -1,0 +1,46 @@
+# Core AI and Agent Dependencies
+openai>=1.0.0
+anthropic>=0.7.0
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+
+# MCP Server Dependencies
+mcp>=1.0.0
+mcp-server-slack>=1.0.0
+mcp-server-google>=1.0.0
+
+# Web Framework and API
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.0.0
+
+# HTTP Client
+httpx>=0.25.0
+requests>=2.31.0
+
+# Environment and Configuration
+python-dotenv>=1.0.0
+pydantic-settings>=2.0.0
+
+# Development and Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Utilities
+rich>=13.0.0
+typer>=0.9.0
+click>=8.1.0
+
+# Async Support
+asyncio-mqtt>=0.16.0
+aiofiles>=23.0.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Logging
+structlog>=23.0.0 
