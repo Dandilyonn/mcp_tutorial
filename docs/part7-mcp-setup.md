@@ -23,14 +23,20 @@ python -c "import mcp; print('MCP installed successfully!')"
 
 ### Step 2: Install Official MCP Servers
 
+**Note**: Official MCP servers are still in development. For now, we'll use mock implementations in our examples.
+
 ```bash
-# Install popular MCP servers
-pip install mcp-server-slack
-pip install mcp-server-google
-pip install mcp-server-github
-pip install mcp-server-filesystem
-pip install mcp-server-weather
-pip install mcp-server-web-search
+# Install the core MCP package
+pip install mcp
+
+# For real MCP servers, check the official MCP repository:
+# https://github.com/modelcontextprotocol
+# 
+# When available, you can install servers like:
+# pip install mcp-server-slack
+# pip install mcp-server-google
+# pip install mcp-server-github
+# pip install mcp-server-filesystem
 ```
 
 ### Step 3: Verify Server Installation
@@ -428,23 +434,19 @@ def test_server_packages():
     print("\n🔧 Testing MCP Server Packages")
     print("=" * 50)
     
-    servers = [
-        "mcp_server_slack",
-        "mcp_server_google",
-        "mcp_server_github", 
-        "mcp_server_filesystem"
-    ]
+    # Note: Official MCP servers are still in development
+    print("ℹ️  Official MCP servers are still in development")
+    print("✅ Using mock implementations in our examples")
+    print("✅ Core MCP package is available")
     
-    all_installed = True
-    for server in servers:
-        try:
-            __import__(server)
-            print(f"✅ {server} - Installed")
-        except ImportError:
-            print(f"❌ {server} - Not installed")
-            all_installed = False
-    
-    return all_installed
+    # Test core MCP package
+    try:
+        import mcp
+        print("✅ MCP core package - Installed")
+        return True
+    except ImportError:
+        print("❌ MCP core package - Not installed")
+        return False
 
 async def main():
     """Main test function"""

@@ -7,8 +7,13 @@ langchain-anthropic>=0.1.0
 
 # MCP Server Dependencies
 mcp>=1.0.0
-mcp-server-slack>=1.0.0
-mcp-server-google>=1.0.0
+# Note: Official MCP servers are still in development
+# For now, we'll use mock implementations in our examples
+# When official servers are available, uncomment these:
+# mcp-server-slack
+# mcp-server-google
+# mcp-server-github
+# mcp-server-filesystem
 
 # Web Framework and API
 fastapi>=0.104.0
@@ -43,4 +48,15 @@ pandas>=2.0.0
 numpy>=1.24.0
 
 # Logging
-structlog>=23.0.0 
+structlog>=23.0.0
+
+# Streamlit and Visualization (for demos)
+streamlit>=1.28.0
+folium>=0.14.0
+streamlit-folium>=0.13.0
+
+# Google APIs (for MCP server)
+googlemaps>=4.10.0
+google-auth-oauthlib>=1.0.0
+google-auth-httplib2>=0.1.0
+google-api-python-client>=2.0.0 

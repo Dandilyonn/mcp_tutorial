@@ -42,9 +42,9 @@ Before starting this tutorial, you should have:
 
 - Basic knowledge of Python programming
 - Familiarity with command line tools
-- A GitHub account (for some MCP server configurations)
-- Slack workspace access (for the Slack integration part)
-- Google Cloud account (for the Google APIs part)
+- OpenAI API key (get one at [platform.openai.com](https://platform.openai.com))
+
+**Note**: This tutorial uses mock MCP server implementations for learning purposes. Official MCP servers are still in development. See [MCP Server Status](./docs/MCP_SERVER_STATUS.md) for more details.
 
 ## Quick Start
 
